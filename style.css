@@ -1,1 +1,68 @@
-body {}
+body {
+    background-color:white;
+}
+
+.nav-link {
+    margin: 30px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: pink 
+    
+}
+
+.main {
+    margin-left: 200px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: burlywood;
+    padding-left: 8px;
+}
+
+.bi-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.porticon {
+    width: 180px;
+    height: 200px;
+    border-radius: 150px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
