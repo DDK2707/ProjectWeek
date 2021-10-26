@@ -23,13 +23,17 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color:red;
     display: block;
     transition: 0.3s;
 }
 
 .sidebar a:hover{
-    color: black;
+    color:white;
+}
+
+.sidebartitle {
+    color: red;
 }
 
 .sidebar .closebtn {
@@ -38,6 +42,7 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: red;
 }
 
 .openbtn {
@@ -50,7 +55,8 @@ body {
 }
 
 .openbtn:hover {
-    background-color: rgb(207, 77, 77);
+    background-color: white;
+    transition: 0.4s;
 }
 
 #main {
@@ -73,4 +79,22 @@ body {
 
 #contactform {
     justify-content: center;
+}
+
+@media screen and (max-width:450px) {
+    #contactform {display: none;}
+    #mobileform {display: flex;}
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+#footer {
+    align-items: center;
+}
+
+.btn-outline-dark {
+    border-radius: 25px;
+    margin: 5px;
 }
