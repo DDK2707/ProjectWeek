@@ -18,40 +18,86 @@
     <a href="#">Testimonials</a>
 </div>
 
-
 <div id="main">
     <button class="openbtn" onclick="openNav()">&#9776</button>
 </div>
+
 <body>
-    <footer class="page-footer font-small blue pt-4 bg-light text-center" id="footer">
-        <div class="container-fluid justify-content-center" id="contactform">
-          <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">          
-              <h2 class="text-uppercase">Contact Me</h2>
-                <form action="/action_page.php">
-                  <div class="mb-3 mt-3">
-                    <label for="name">Name:</label>
-                    <input type="name" class="form-control" id="name" placeholder="Jeff Jefferson" name="name">
-                  </div>
-                  <div class="mb-3">
-                    <label for="mail"> Name:</label>
-                    <input type="email" class="form-control" id="email" placeholder="jeff@jeffmail.jeff" name="email">
-                  </div>
-                  <div class="mb-3">
-                    <label for="msg">Your Message:</label>
-                    <input type="text" class="form-control" id="message" placeholder="words and tings and stuff go here" name="msg">
-                  </div>
-                  <div class="form-check mb-3">
-                    <label class="form-check-label">
-                      <input class="form-check-input" type="checkbox" name="remember"> Remember me
-                    </label>
-                  </div>
-                  <button type="submit" class="btn btn-danger">Submit</button>
-                </form>
-              </div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Dale de Kock</h1>
+      <p>Writer and Aspiring Fullstack Developer</p>
+      <button>About Me</button>
+    </div>
+  </div>
+
+  <footer class="page-footer font-small blue pt-4 bg-light text-center" id="footer">      <div class="container-fluid justify-content-center" id="contactform">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">         
+        <h2 class="text-uppercase">Contact Me</h2>
+          <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+              <label for="name">Name:</label>
+              <input type="name" class="form-control" id="name" placeholder="Jeff Jefferson" name="name">
             </div>
+            <div class="mb-3">
+              <label for="mail"> Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="jeff@jeffmail.jeff" name="email">
+            </div>
+            <div class="mb-3">
+              <label for="msg">Your Message:</label>
+              <input type="text" class="form-control" id="message" placeholder="words and tings and stuff go here" name="msg">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mobilecontact">
+      <i class="bi bi-megaphone"></i>
+    </button>
+    <div class="modal" id="mobilecontact">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"> Contact Me</h4>
           </div>
-            
+          <div class="modal-body">
+            <form action="/action_page.php">
+              <div class="mb-3 mt-3">
+                <label for="name">Name:</label>
+                <input type="name" class="form-control" id="name" placeholder="Jeff Jefferson" name="name">
+              </div>
+              <div class="mb-3">
+                <label for="mail"> Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="jeff@jeffmail.jeff" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="msg">Your Message:</label>
+                <input type="text" class="form-control" id="message" placeholder="words and tings and stuff go here" name="msg">
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
         <hr class="clearfix w-100 d-md-none pb-3">
 
           <div class="col-md-3 mb-md-0 mb-3 justify-content-center" id="socialmedia">
