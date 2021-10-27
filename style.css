@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
 .nav-link {
     margin: 30px;
 }
@@ -35,7 +37,7 @@
 }
 
 .sidebartitle {
-    color: red;
+    color: white;
     padding-left: 8px;
 }
 
@@ -90,7 +92,9 @@
 
 @media screen and (max-width:450px) {
     #contactform {display: none;}
-    #mobilecontact {display:contents;}
+    #mobilecontact {
+      display: ;
+    }
 }
 
 .form-check-input:hover {
@@ -472,4 +476,11 @@ svg circle:nth-child(2)
 {
   stroke-dashoffset:calc(440 - (440 * 90) / 100);
   stroke:#00ff43;
+}
+
+@media screen and (max-width: 450px) {
+  .skillscontainer {
+    justify-content: left;
+    padding-left: 30px;
+  }
 }
