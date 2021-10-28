@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="/bootstrapicons.css"> -->
     <link rel="stylesheet" href="style.css">
-  
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <div id="mysidebar" class="sidebar">
@@ -17,6 +17,22 @@
     <a href="portfolio.html">About Me</a>
     <a class="active" href="projects.html">Projects and Writing</a>
     <a href="testimonials.html">Testimonials</a>
+    <hr class="clearfix w-100 d-md-none pb-3">
+    <div class="container-fluid justify-content-center">
+    <div class="row">
+            <div class="justify-content-center" id="socialmedia">
+            <h5 class="text-uppercase text-center text-light">Social Media</h5>
+            <div class="btn-group-vertical d-flex align-items-center">
+                <a href="https://www.linkedin.com/in/dale-de-kock-b26567206/" target="_blank" class="btn" id="smbutton">LinkedIn</a>
+                <a href="#" class="btn" id="smbutton">Gmail</a>
+                <a href="https://github.com/DDK2707" target="_blank" class="btn" id="smbutton">Github</a>
+                <a href="" target="_blank" class="btn" id="smbutton">Instagram</a>
+                <a href="https://www.booksie.com/portfolio-view/dale-craig-242038" target="_blank" class="btn" id="smbutton">Booksie</a>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
 </div>
 
 <div id="main">
@@ -24,8 +40,58 @@
 </div>
 
 <body style="background-color: white;">
+    <input type="checkbox" id="debug" />
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Projects and Writing</h1>
+          <p>Scroll past the coding project cards for a peek at some of my writing</p>
+          <div class="mouse_scroll">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <div>
+              <span class="m_scroll_arrows unu"></span>
+              <span class="m_scroll_arrows doi"></span>
+              <span class="m_scroll_arrows trei"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     
-
+      <div class="flex-container">
+        <div class="row justify-content-center">
+            <h3 class="text-center" id="skillstitle">Coding Projects</h3>
+            <div class="col-sm-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="testimage" src="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3><a href="https://sad-knuth-e0636d.netlify.app/" target="_blank" class="flipcardlink">E-Commerce Website</a></h3>
+                        <p>A website created after my introduction to Bootstrap 5, using HTML and Bootstrap, showcasing my love for classic rock and metal
+                            music. It was also an attempt at creating a visually appealing site in terms of combining colours and themes within the design. 
+                        </p>
+                    </div>
+                </div>
+                <h3></h3>
+            </div>
+     
+            <div class=" col-sm-4 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="testimage" src="" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3><a href="https://nervous-goodall-7c9635.netlify.app/" target="_blank" class="flipcardlink">My First website</a> </h3>
+                        <p>The first website created during the course at Life Choices Academy. I used HTML and CSS to create a multipage "portfolio" website to showcase
+                            the skills gained during the very short span of time that we dealt with HTML and CSS.
+                        </p>
+                    </div>
+                </div>
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>    
     <script src="/bootstrap.bundle.min.js"></script>
     <script src="transition.js"></script>
 </body>
