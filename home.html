@@ -38,7 +38,7 @@
     <button class="openbtn" id="openbtn" onclick="openNav()">&#9776</button>
 </div>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>  -->
 
 <body>
   <div class="hero-image">
@@ -256,11 +256,8 @@
   </div>
 
   <footer class="page-footer font-small blue pt-4 bg-light text-center" id="footer">      
-    <div class="container-fluid" id="contactform">
-    <div class="row">
-      <div class="col-md-4">
         <h2 class="text-uppercase">Contact Me</h2>
-          <form action="mailto:angryturnip98@gmail.com">
+          <form action="mailto:angryturnip98@gmail.com" class="contactform">
             <div class="mb-3 mt-3">
               <label for="name">Name:</label>
               <input type="name" class="form-control" id="name" placeholder="Jeff Jefferson" name="name">
@@ -271,16 +268,10 @@
             </div>
             <div class="mb-3">
               <label for="msg">Your Message:</label>
-              <input type="text" class="form-control" id="message" placeholder="words and tings and stuff go here" name="msg">
-            </div>
-            <div class="form-check mb-3">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="remember"> Remember me
-              </label>
+              <input type="text" class="form-control" id="message" placeholder="words go here" name="msg">
             </div>
             <button type="submit" class="btn btn-danger" id="formsubmit">Submit</button>
           </form>
-      </div>
     </div>
   
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">

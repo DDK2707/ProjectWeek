@@ -146,6 +146,36 @@
     align-items: center;
 }
 
+#name {
+  width: 50%;
+  margin-left: 320px;
+  text-align: center;
+}
+#email {
+  width: 50%;
+  margin-left: 320px;
+  text-align: center;
+}
+#message {
+  width: 50%;
+  height: fit-content;
+  margin-left: 320px;
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  #name {
+    margin-left: 96px;
+  }
+  #email {
+    margin-left: 96px;
+  }
+  #message {
+    height: fit-content;
+    margin-left: 96px;
+  }
+}
+
 #formsubmit {
   background-color: red;
 }
@@ -983,7 +1013,7 @@ body {
     }
 }
 
-#myBtn {
+/* #myBtn {
   display: none;
   position: fixed; 
   bottom: 20px; 
@@ -1003,4 +1033,11 @@ body {
   background-color:white;
   color: black;
   transition: 0.6s;
+} */
+
+@media screen and (max-width:450px) {
+  #writingblock {
+    margin-left: 411px;
+    padding-right: 290px;
+  }
 }
