@@ -836,9 +836,20 @@ width: 500px; height:300px;
   color: black;
 }
 
+#mobileproject {
+  display: none;
+  justify-content:center ;
+}
+
 .flipcardlink:hover {
   color: white;
   transition: 0.5s
+}
+
+@media screen and (max-width: 450px) {
+  #mobileproject {
+    display: flex;
+  }  
 }
 
 * {
