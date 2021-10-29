@@ -361,11 +361,11 @@ body {
   }
 
   .container .content h2 {
-    color: black;
+    color:white;
   }
 
   .container .content p {
-    color: black;
+    color: white;
   }
 
   .container.left {
@@ -812,8 +812,6 @@ right: 0;
   backface-visibility: hidden;
 }
 
-.flip-card:hover, .flip-card-front 
-
 .flip-card-front {
   background-color: #bbb;
   color: black;
@@ -828,7 +826,7 @@ right: 0;
   margin-left: -12px;
 }
 
-.testimage {
+.projectimage {
 width: 500px; height:300px;
 }
 
@@ -836,20 +834,9 @@ width: 500px; height:300px;
   color: black;
 }
 
-#mobileproject {
-  display: none;
-  justify-content:center ;
-}
-
 .flipcardlink:hover {
   color: white;
   transition: 0.5s
-}
-
-@media screen and (max-width: 450px) {
-  #mobileproject {
-    display: flex;
-  }  
 }
 
 * {
@@ -867,7 +854,33 @@ body {
 
 .testcontainer {
     margin-top: 80px;
-    width: 900px
+    width: 900px;
+    margin-left: 475px;
+}
+
+@media screen and (max-width: 450px) {
+  .testcontainer {
+    margin-left: -250px;
+  }
+  .flex-container {
+    margin-left: -100px;
+  }
+  .flip-card {
+    width: 400px;
+    height: 250px;
+  }
+  .flip-card-back {
+    width: 106%;
+    height: 101%;
+    margin-left: -12px;
+  }
+  .projectimage {
+    width: 100%;
+    height: 100%;
+  }
+  .content{
+    color: white;
+  }
 }
 
 .testcontainer .col-lg-4 {
@@ -881,7 +894,8 @@ body {
     transform-style: preserve-3d;
     perspective: 500px;
     border: none;
-    background-color: inherit
+    background-color: inherit;
+    margin: 15px;
 }
 
 .card .face {
@@ -969,3 +983,24 @@ body {
     }
 }
 
+#myBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px;
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  background-color: red; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color:white;
+  color: black;
+  transition: 0.6s;
+}
