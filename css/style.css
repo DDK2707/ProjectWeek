@@ -71,6 +71,7 @@
     display: block;
     transition: 0.5s;
     font-size: large;
+    text-align: center;
 }
 
 .sidebar a:hover{
@@ -79,7 +80,7 @@
 
 .sidebartitle {
     color: white;
-    padding-left: 8px;
+    text-align: center;
 }
 
 .sidebar .closebtn {
@@ -367,6 +368,14 @@ body {
   border-radius: 500px 500px 500px 500px;
 }
 
+.container.left .timelinecontent {
+  margin-left: 10px;
+}
+.container.left .timelinehead {
+  margin-left: 10px;
+}
+
+
 .container .content h2 {
   margin: 0 0 10px 0;
   font-size: 18px;
@@ -453,6 +462,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   color: black;
+  margin-top: 40px;
 }
 
 #skillstitle {
@@ -464,9 +474,9 @@ body {
 .skillscontainer
 {
   position:relative;
-  width:600px;
+  width:400px;
   display:flex;
-  justify-content:space-around;
+  justify-content:center;
   margin: 15px
 }
 .skillscontainer .skillscard
@@ -590,7 +600,7 @@ svg circle:nth-child(2)
 @media screen and (max-width: 450px) {
   .skillscontainer {
     justify-content: left;
-    padding-left: 30px;
+    margin-left: 86px;
   }
 }
 
