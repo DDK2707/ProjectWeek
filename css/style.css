@@ -50,7 +50,6 @@
   right: 0;
 }
 
-
 .sidebar {
     height: 100%;
     width: 0;
@@ -71,6 +70,7 @@
     color:red;
     display: block;
     transition: 0.5s;
+    font-size: large;
 }
 
 .sidebar a:hover{
@@ -95,14 +95,17 @@
     font-size: 20px;
     cursor: pointer;
     background-color:red;
-    color: black;
     padding: 10px 15px;
-    border: none;   
+    border-radius: 5px;   
+    border: 1px;
+    border-color: #000;
 }
 
 .openbtn:hover {
     background-color: white;
     transition: 0.5s;
+    border: 1px;
+    border-color: #000;
 }
 
 #main {
@@ -113,6 +116,11 @@
 @media screen and (max-height: 450px) {
     .sidebar {padding-top:15px}
     .sidebar a{font-size: 18px;}
+}
+
+.aboutprg {
+  text-align: left;
+  margin-left: 25px;
 }
 
 .porticon {
