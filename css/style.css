@@ -93,7 +93,7 @@
     color: red;
 }
 
-.openbtn {
+#openbtn {
     font-size: 20px;
     cursor: pointer;
     background-color:red;
@@ -103,7 +103,7 @@
     border-color: #000;
 }
 
-.openbtn:hover {
+#openbtn:hover {
     background-color: white;
     transition: 0.5s;
     border: 1px;
@@ -113,6 +113,7 @@
 #main {
     transition: margin-left .5s;
     padding: 20px;
+    margin-left: 243px;
 }
 
 @media screen and (max-height: 450px) {
@@ -608,6 +609,12 @@ svg circle:nth-child(2)
 #smbutton {
   outline: none;
   border-radius: 50px;
+  margin-bottom: 15px;
+  width: 50px;
+}
+
+#smbutton .bi {
+  margin-left: -25px;
 }
 
 #smbutton:hover{
