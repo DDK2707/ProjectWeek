@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
 
 <body>
   <div class="hero-image">
@@ -33,16 +33,16 @@
   <div id="mysidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <h2 class="sidebartitle"> Dale de Kock</h2>
-    <img src="/Images/landingiconphoto.jpg" class="porticon" alt="icon">
+    <img src="/Images/sidebariconphoto.jpg" class="porticon" alt="icon">
     <a href="home.html" id="sidebarclick">About</a>
-    <a class="active" href="projects.html" id="sidebarclick">Portfolio</a>
+    <a href="projects.html" id="sidebarclick">Portfolio</a>
     <a href="testimonials.html" id="sidebarclick">Testimonials</a>
     <a href="contact.html" id="sidebarclick">Contact Me</a>
     <hr class="clearfix w-100 d-md-none pb-3">
     <div class="container-fluid justify-content-center" id="socialmedia">
         <div class="row">
             <div class="justify-content-center">
-                <h5 class="text-uppercase text-center text-light">Social Media</h5>
+                <h5 class="text-uppercase text-center text-light" id="smtitle">Social Media</h5>
                 <div class="btn-group-vertical d-flex align-items-center">
                     <a href="https://www.linkedin.com/in/dale-de-kock-b26567206/" target="_blank" class="btn" id="smbutton"><i class="bi bi-linkedin"></i></a>
                     <a href="https://www.linkedin.com/in/dale-de-kock-b26567206/" target="_blank" class="btn" id="smbuttonhover">LinkedIn</a>
@@ -64,7 +64,7 @@
 
   <h2 class="timelinetitle">Work</h2>
   <div class="timeline">
-    <div class="container left">
+    <div class="container-item container left" id="timelinecontainer">
       <div class="date">May 2017-Mar 2018</div>
       <div class="content">
         <h2 class="timelinehead">Retail Assistant</h2>
@@ -73,7 +73,7 @@
         </p>
       </div>
     </div>
-    <div class="container right">
+    <div class="container-item container right" id="timelinecontainer">
       <div class="date">Nov 2018- Mar 2020</div>
       <div class="content">
         <h2 class="timelinehead">Usher</h2>
@@ -82,8 +82,8 @@
         </p>
       </div>
     </div>
-    <div class="container left">
-      <div class="date">Feb-Sep 2021</div>
+    <div class="container-item container left" id="timelinecontainer">
+      <div class="date">Feb 2021-Sep 2021</div>
       <div class="content">
         <h2 class="timelinehead">Freelance Editor</h2>
         <p class="timelinecontent">
@@ -95,8 +95,8 @@
 
   <h2 class="timelinetitle">Education</h2>
   <div class="timeline">
-    <div class="container left">
-      <div class="date">2012-2016</div>
+    <div class="container-item container left" id="timelinecontainer">
+      <div class="date"> Feb 2012-Nov 2016</div>
       <div class="content">
         <h2 class="timelinehead">National Senior Certificate</h2>
         <p class="timelinecontent">
@@ -105,8 +105,8 @@
         </p>
       </div>
     </div>
-    <div class="container right">
-      <div class="date">2017-2019</div>
+    <div class="container-item container right" id="timelinecontainer">
+      <div class="date"> Mar 2017-Nov 2019</div>
       <div class="content">
         <h2 class="timelinehead">University of Cape Town</h2>
         <p class="timelinecontent">
@@ -114,11 +114,11 @@
         </p>
       </div>
     </div>
-    <div class="container left">
-      <div class="date">2020-2021</div>
+    <div class="container-item container left" id="timelinecontainer">
+      <div class="date">Feb 2020- Feb 2021</div>
       <div class="content">
         <h2 class="timelinehead">University of the Western Cape</h2>
-        <p class="timelinecontent">
+        <p class="timelinecontent">skillscontainer
           Honours degree in History. Research Paper - How Orality, Photography and Matriarchal Family Structures Contribute to Identity and Family Values as Seen by a Coloured Youth
         </p>
       </div>
@@ -275,8 +275,9 @@
   </div>
 
   <section class="aboutprg">
-    <div class="col-sm-6">
-      <h2 id="skillstitle">About Me</h2>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 id="skillstitle">About Me</h2>
         I'm an avid reader, my favourite books being Wizard's First Rule by Terry Goodkind, the Skulduggery Pleasant series by Derek Landy, and the Heroes of Olympus series by Rick Riordan. I am also a self-proclaimed metalhead, and have started dabbling in making my own music. I spend much of my time
         behind a screen, and if I'm not there, then I'll be in the kitchen or working out. <br><br> 
         My interest in coding comes from my love of video games and all things related to the internet. I spend quite a large portion of my waking hours on the interenet,and the creativity and skills that goes into making the content that I consume 
@@ -286,9 +287,35 @@
         I am introspective and observant by nature, and this sometimes comes across as antisocial behaviour. I don't initially feel comfortable in large groups, but will form strong bonds given time. I believe that I would be a great addition to 
         any team because of my calm demeanour and leadership qualities, as well as creative problem solving skills that I have honed during my studies and the current course at Life Choices Academy.
         </p>
-    </div>
-    <div class="col sm-6">
-      <embed src="" type="">
+      </div>
+      <div class="col sm-6">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          </div>
+        
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="la.jpg" alt="Bachelor of Arts" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="chicago.jpg" alt="Honours" class="d-block w-100">
+            </div>
+          </div>
+        
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 
