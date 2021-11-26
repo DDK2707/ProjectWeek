@@ -52,7 +52,7 @@
 
 #mysidebar {
     height: 100%;
-    width: 300px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -76,12 +76,19 @@
 }
 
 .sidebar a:hover{
-    color:white;
+    color:red;
+    transition: 0.5s;
 }
+
 
 .sidebartitle {
     color: white;
-    text-align: center;
+    text-align: center; 
+    margin-left: -10px;
+}
+
+#socialmedia{
+  margin-top: 10px;
 }
 
 .sidebar .closebtn {
@@ -131,7 +138,11 @@
     height: 200px;
     border-radius: 150px;
     margin-bottom: 20px;
-    margin-left: 50px;
+    margin-left: 34px;
+}
+
+#sidebarclick {
+  margin-left: -25px;
 }
 
 #contactform {
@@ -611,6 +622,10 @@ svg circle:nth-child(2)
   border-radius: 50px;
   margin-bottom: 15px;
   width: 50px;
+}
+
+#smbuttonhover {
+  display: none;
 }
 
 #smbutton .bi {
