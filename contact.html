@@ -1,0 +1,85 @@
+<html>
+<title>Contact Dale de Kock</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="/bootstrapicons.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Contact Me</h1>
+        <h3></h3>
+        <div class="mouse_scroll">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="m_scroll_arrows unu"></span>
+            <span class="m_scroll_arrows doi"></span>
+            <span class="m_scroll_arrows trei"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="mysidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <h2 class="sidebartitle"> Dale de Kock</h2>
+      <img src="/Images/sidebariconphoto.jpg" class="porticon" alt="icon">
+      <a href="home.html" id="sidebarclick">About</a>
+      <a class="active" href="projects.html" id="sidebarclick">Portfolio</a>
+      <a href="testimonials.html" id="sidebarclick">Testimonials</a>
+      <a href="contact.html" id="sidebarclick">Contact Me</a>
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="container-fluid justify-content-center" id="socialmedia">
+          <div class="row">
+              <div class="justify-content-center">
+                  <h5 class="text-uppercase text-center text-light" id="smtitle">Social Media</h5>
+                  <div class="btn-group-vertical d-flex align-items-center">
+                      <a href="https://www.linkedin.com/in/dale-de-kock-b26567206/" target="_blank" class="btn" id="smbutton"><i class="bi bi-linkedin"></i></a>
+                      <a href="https://github.com/DDK2707" target="_blank" class="btn" id="smbutton"><i class="bi bi-github"></i></a>
+                      <a href="https://www.instagram.com/dalecraig27/" target="_blank" class="btn" id="smbutton"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.booksie.com/portfolio-view/dale-craig-242038" target="_blank" class="btn" id="smbutton"><i class="bi bi-book"></i></a>
+                  </div>
+              </div>
+          </div> 
+      </div>
+    </div>
+  
+    <div id="main">
+      <button class="openbtn" id="openbtn" onclick="openNav()">&#9776</button>
+    </div>
+    <form class="text-center" action="/action_page.php>" method="POST">
+        <fieldset style="color:black;">
+            <legend>Your Info</legend>
+            <label for="enter your name"> Name:</label><br>
+            <input type="text" id="Name" name="Name" placeholder="John Doe" autofocus><br>
+            <label for="enter telephone number"> Telephone:</label><br>
+            <input type="tel" id="Telephone" name="Telephone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <label for="enter email address">E-mail Address</label><br>
+            <input type="email" id="E-mail" name="E-mail" placeholder="example@email.com" multiple required><br>
+        </fieldset>
+        <fieldset style="color:black;">
+            <legend>Your Message</legend>
+            <label for="enter message"></label><br>
+            <input type="text" id="Enter message" name="Enter message" placeholder="Oh shit, is dat boi"><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script src="/JS/bootstrap.bundle.min.js"></script>
+    <script src="/JS/transition.js"></script>
+</body>
+<footer class="page-footer font-small blue pt-4 bg-light text-center" id="footer">      
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Created by:
+      <a class="text-reset fw-bold">Dale de Kock</a>
+    </div>    
+  </footer>
+</html>
